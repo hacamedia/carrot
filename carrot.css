@@ -282,6 +282,7 @@ ul.carrot-tabs,
 .cnt,
 .cnt-l,
 .article-section,
+.article-menu,
 .form-group,
 .menu-container ul,
 .panel-responsive .panel-row {
@@ -295,6 +296,7 @@ ul.carrot-tabs:after,
 .cnt:after,
 .cnt-l:after,
 .article-section:after,
+.article-menu:after,
 .form-group:after,
 .menu-container ul:after,
 .panel-responsive .panel-row:after {
@@ -510,51 +512,98 @@ p {
 .col-gr-7,
 .col-gr-8,
 .col-gr-9,
-.col-gr-10 {
+.col-gr-10,
+.col-gr-11,
+.col-gr-12,
+.col-gr-13,
+.col-gr-14,
+.col-gr-15,
+.col-gr-16
+{
     float: left;
     padding-left: 10px;
     padding-right: 10px;
 }
-
-.panel-responsive .panel-row .panel-section.panel-gr-1, .col-gr-1 {
-    width: 10%;
+.panel-responsive .panel-row .panel-section.panel-gr-1,
+.col-gr-1 {
+    width: 6.25%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-2, .col-gr-2 {
-    width: 20%;
+.panel-responsive .panel-row .panel-section.panel-gr-2,
+.col-gr-2 {
+    width: 12.5%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-3, .col-gr-3 {
-    width: 30%;
+.panel-responsive .panel-row .panel-section.panel-gr-3,
+.col-gr-3 {
+    width: 18.75%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-4, .col-gr-4 {
-    width: 40%;
+.panel-responsive .panel-row .panel-section.panel-gr-4,
+.col-gr-4 {
+    width: 25%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-5, .col-gr-5 {
+.panel-responsive .panel-row .panel-section.panel-gr-5,
+.col-gr-5 {
+    width: 31.25%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-6,
+.col-gr-6 {
+    width: 37.5%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-7,
+.col-gr-7 {
+    width: 43.75%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-8,
+.col-gr-8 {
     width: 50%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-6, .col-gr-6 {
-    width: 60%;
+.panel-responsive .panel-row .panel-section.panel-gr-9,
+.col-gr-9 {
+    width: 56.25%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-7, .col-gr-7 {
-    width: 70%;
+.panel-responsive .panel-row .panel-section.panel-gr-10,
+.col-gr-10 {
+    width: 62.5%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-8, .col-gr-8 {
-    width: 80%;
+.panel-responsive .panel-row .panel-section.panel-gr-11,
+.col-gr-11 {
+    width: 68.75%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-9, .col-gr-9 {
-    width: 90%;
+.panel-responsive .panel-row .panel-section.panel-gr-12,
+.col-gr-12 {
+    width: 75%;
 }
 
-.panel-responsive .panel-row .panel-section.panel-gr-10, .col-gr-10 {
+.panel-responsive .panel-row .panel-section.panel-gr-13,
+.col-gr-13 {
+    width: 81.25%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-14,
+.col-gr-14 {
+    width: 87.5%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-15,
+.col-gr-15 {
+    width: 93.75%;
+}
+
+.panel-responsive .panel-row .panel-section.panel-gr-16,
+ .col-gr-16 {
     width: 100%;
 }
+
 
 .carrot .menu-container .form-control {
     border-width: 1px;
@@ -642,7 +691,7 @@ h6.hlarge,
 .tmedium {
     font-size: 1.370em;
     margin-bottom: 22px;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 h6 {
@@ -675,6 +724,10 @@ h6 {
     background: transparent;
     margin: 0;
 }
+
+.btn.btn-large{ font-size: 30px; padding: 18px 28px}
+.btn.btn-medium{ font-size: 24px;}
+.btn.btn-small{ font-size: 14px;}
 
 .transition .btn {
     transition: 0.25s;
@@ -1246,7 +1299,26 @@ ul.carrot-list li:last-child {
     background: #e9e9e9;
     color: #444;
 }
+.article-section.blank{
+    background: #fff
+}
+.article-section .article-menu{
+    text-align: center;
+}
 
+.article-section .article-menu ul li a:hover,
+.article-section .article-menu ul li.active a{
+    background: #f6f6f6
+}
+
+.article-section .article-menu ul li{
+    display: inline-block;
+    margin-left: -4px
+}
+.article-section .article-menu ul li a{
+    padding: 18px 22px;
+    display: block;
+}
 .article-section .article-wrap {
     padding: 42px 12px;
 }
@@ -1258,6 +1330,60 @@ ul.carrot-list li:last-child {
 .article-body {
     font-weight: 300;
 }
+
+
+.article-section .article-menu ul{ border-top: 1px solid #e0e0e0; }
+.article-section .article-menu ul li a{ color: #444 }
+
+.article-section.carrot-danger .article-menu ul{ border-top: 1px solid  #f44f2f; }
+.article-section.carrot-danger .article-menu ul li a{ color: #fff }
+.article-section.carrot-danger .article-menu ul li a:hover,
+.article-section.carrot-danger .article-menu ul li.active a{ background: #f44f2f }
+
+.article-section.carrot-success .article-menu ul{ border-top: 1px solid  #33d778; }
+.article-section.carrot-success .article-menu ul li a{ color: #fff }
+.article-section.carrot-success .article-menu ul li a:hover,
+.article-section.carrot-success .article-menu ul li.active a{ background: #33d778 }
+
+.article-section.carrot-alert .article-menu ul{ border-top: 1px solid  #f8ca13; }
+.article-section.carrot-alert .article-menu ul li a{ color: #fff }
+.article-section.carrot-alert .article-menu ul li a:hover,
+.article-section.carrot-alert .article-menu ul li.active a{ background: #f8ca13 }
+
+.article-section.carrot-user .article-menu ul{ border-top: 1px solid  #a560c2; }
+.article-section.carrot-user .article-menu ul li a{ color: #fff }
+.article-section.carrot-user .article-menu ul li a:hover,
+.article-section.carrot-user .article-menu ul li.active a{ background: #a560c2 }
+
+.article-section.carrot-gray .article-menu ul{ border-top: 1px solid  #8c9899; }
+.article-section.carrot-gray .article-menu ul li a{ color: #fff }
+.article-section.carrot-gray .article-menu ul li a:hover,
+.article-section.carrot-gray .article-menu ul li.active a{ background: #8c9899 }
+
+.article-section.carrot-green .article-menu ul{ border-top: 1px solid  #3dbfac; }
+.article-section.carrot-green .article-menu ul li a{ color: #fff }
+.article-section.carrot-green .article-menu ul li a:hover,
+.article-section.carrot-green .article-menu ul li.active a{ background: #3dbfac }
+
+.article-section.carrot-dark .article-menu ul{ border-top: 1px solid  #3f566e; }
+.article-section.carrot-dark .article-menu ul li a{ color: #fff }
+.article-section.carrot-dark .article-menu ul li a:hover,
+.article-section.carrot-dark .article-menu ul li.active a{ background: #3f566e }
+
+.article-section.carrot-dark-light .article-menu ul{ border-top: 1px solid  #4b637c; }
+.article-section.carrot-dark-light .article-menu ul li a{ color: #fff }
+.article-section.carrot-dark-light .article-menu ul li a:hover,
+.article-section.carrot-dark-light .article-menu ul li.active a{ background: #4b637c }
+
+.article-section.carrot-info .article-menu ul{ border-top: 1px solid  #70a3fb; }
+.article-section.carrot-info .article-menu ul li a{ color: #fff }
+.article-section.carrot-info .article-menu ul li a:hover,
+.article-section.carrot-info .article-menu ul li.active a{ background: #70a3fb }
+
+.article-section.carrot-opaque .article-menu ul{ border-top: 1px solid  #4c4c4c; }
+.article-section.carrot-opaque .article-menu ul li a{ color: #fff }
+.article-section.carrot-opaque .article-menu ul li a:hover,
+.article-section.carrot-opaque .article-menu ul li.active a{ background: #4c4c4c }
 
 .carrot ul.carrot-tabs {
     display: block;
@@ -1350,6 +1476,11 @@ ul.carrot-tabs li.active {
 
 @media only screen 
 and (max-width : 768px) {
+    
+    .--blank{
+        height: 0
+    }
+
  
     .carrot .panel-responsive .panel-row .panel-section {
         float: none;
@@ -1365,7 +1496,14 @@ and (max-width : 768px) {
     .col-gr-7,
     .col-gr-8,
     .col-gr-9,
-    .col-gr-10 {
+    .col-gr-10,
+    .col-gr-11,
+    .col-gr-12,
+    .col-gr-13,
+    .col-gr-14,
+    .col-gr-15,
+    .col-gr-16
+     {
         float: none;
         width: 100%;
         margin-bottom: 4px;
@@ -1712,6 +1850,10 @@ and (max-width : 768px) {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+.push-limit {
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 code.tabbed1 {
