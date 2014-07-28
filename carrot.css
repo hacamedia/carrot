@@ -393,6 +393,8 @@ p {
     font-weight: 300;
 }
 
+
+
 .panel-row.panel-fragment-1 .panel-section .panel-wrap,
 .bloq-margin-1 {
     margin: 1px;
@@ -524,6 +526,7 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .panel-responsive .panel-row .panel-section.panel-gr-1,
 .col-gr-1 {
     width: 6.25%;
@@ -1474,6 +1477,51 @@ ul.carrot-tabs li.active {
     color: #333;
 }
 
+ .g--blank{
+        background: transparent;
+        text-indent: -999999999px
+}
+.g--sidebar{
+    max-width: 232px;
+}
+
+.carrot-nav{
+    text-align: left;
+    background-color: #fff;
+    border-radius: 6px;
+    margin:  0 0;
+    padding: 0;
+}
+.carrot-nav > li:first-child >a{
+    border-radius: 6px 6px 0 0;
+}
+.carrot-nav > li:last-child > a {
+    border-radius: 0 0 6px 6px;
+}
+.carrot-nav > li > a:hover {
+    background: #fafafa;
+    color: #077cb7
+}
+.carrot-nav > li.active > a {
+    background: #08c;
+    color: #fafafa;
+    border: none
+}
+.carrot-nav > li > a > i {
+    margin-right: 5px
+}
+.transition .carrot-nav > li > a {
+    transition:0.45s;
+}
+.carrot-nav > li > a{
+   border: 1px solid #e5e5e5;
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    color: #08c;
+    line-height: 1.4;
+}
+
 @media only screen 
 and (max-width : 768px) {
     
@@ -1895,6 +1943,3 @@ code.tabbed9 {
 code.tabbed10 {
     padding-left: 100px;
 }
-
-
-
